@@ -178,7 +178,7 @@ void Sauvegarder(Mot* Dictionnaire){
     Mot* temp = Dictionnaire;
        while(temp){
         convert_maj(temp->fr, 100); convert_maj(temp->def, 200); convert_maj(temp->ang, 100);
-        fprintf(pf, "%s : %s : %s", temp->fr, temp->def, temp->ang);
+        fprintf(pf, "%s : %s : %s\n", temp->fr, temp->def, temp->ang);
         temp = temp->next;
        }
 fclose(pf);
